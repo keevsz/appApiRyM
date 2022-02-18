@@ -5,8 +5,8 @@ import Loading from "./Loading";
 
 const PintarDatos = (props) => {
   const [personajes, setPersonajes] = useState([]);
-
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     consumirApi(props.nombrePersonaje);
   }, [props.nombrePersonaje]);

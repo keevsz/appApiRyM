@@ -22,7 +22,7 @@ const Formulario = (props) => {
     reset();
   };
   return (
-    <form onSubmit={handleSubmit} className="form-control mb-2">
+    <form onSubmit={handleSubmit} className=" mb-2" style={{backgroundColor: "#24282F"}}>
       <input
         type="text"
         placeholder="Ingrese personaje"
@@ -31,7 +31,7 @@ const Formulario = (props) => {
         onChange={handleChange}
         name="nombre"
       />
-      <button type="submit" className="btn btn-dark mb-3 form-control">
+      <button type="submit" className="btn btn-light mb-3 form-control">
         Buscar
       </button>
     </form>
